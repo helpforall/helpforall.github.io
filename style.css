@@ -31,11 +31,12 @@
 }
 .hero {
     width: 100%;
-    height: 800px;
+    height: auto;
 }
 .hero > * {
   position: absolute;
   width: 100%;
+  background: linear-gradient(#ECECEC, #bdc3c7);
 }
 .photos {
   position: relative;
@@ -70,7 +71,7 @@
 
 
 nav {
-    height: 60px;
+    height: 50px;
     width: 100%;
     background: #333;
     z-index: 100;
@@ -92,6 +93,22 @@ nav a {
     text-decoration: none;
     color: white;
     margin: 1em;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    transition: 250ms ease-in-out;
+}
+nav a:hover {
+    color: #2980b9;
+    text-decoration: none;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    transition: 250ms ease-in-out;
+}
+nav a:focus {
+  color: #2980b9;
+  text-decoration: none;
 }
 
 /*Tcon Style*/
@@ -111,7 +128,7 @@ nav a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 60px;
+    height: 50px;
     transition: 0.3s;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -204,6 +221,101 @@ nav a {
     width: auto;
 }
 
+.hero h1 {
+  margin-top: 2em;
+  font-weight: 100;
+  text-transform: capitalize;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+}
+.line-break {
+  height: 2px;
+  width: 100px;
+  background: #333;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5em;
+  margin-top: 3em;
+}
+.hero .row {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10em;
+}
+.hero .col-md-4 {
+  margin-top: 2em;
+}
+.img-break {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://s32.postimg.org/81u9ug4l1/unsplash_min.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-break h2 {
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  max-width: 80%;
+}
+.img-break span {
+  color: #27ae60;
+}
+.contact-me {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#bdc3c7, #ECECEC);
+}
+.contact-me h2 {
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+.contact-btn {
+  padding: 8px 30px;
+  background: #3498db;
+  color: white;
+  border: none;
+}
+.contact-btn:hover {
+  background: #2980b9;
+}
+.fa-bolt {
+  color: #f1c40f;
+}
+
+.about-me .headshot {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.about-me .location {
+  margin-top: 1em;
+}
+.about-me i {
+  margin-right: 8px;
+}
+.about-me .description {
+  max-width: 60%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+.about-me .col-md-4 img {
+  max-width: 90%;
+}
+.about-me .col-md-4 img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
 
 .contact {
   width: 100%;
@@ -282,6 +394,7 @@ input:focus ~ label, input.has-value ~ label {
     background: #3498db;
     color: white;
     border: none;
+    margin-bottom: 10em;
 }
 .contact input[type="submit"]:hover {
     background: #2980b9;
@@ -307,5 +420,12 @@ input:focus ~ label, input.has-value ~ label {
     width: 100%;
     text-align: center;
     margin-bottom: 2em;
+  }
+  .about-me .headshot {
+    height: 100px;
+    width: 100px;
+  }
+  .about-me .description {
+    max-width: 80%;
   }
 }
