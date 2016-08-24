@@ -11,5 +11,11 @@ $(document).ready(function() {
       $("nav ul").hide();
     }
   });
+  $("nav a").click(function() {
+    if ($(window).width() < 600) {
+      $("nav ul").slideToggle();
+      $(".tcon").toggleClass("tcon-transform");
+    }
+  })
 
 });
