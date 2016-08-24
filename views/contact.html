@@ -1,0 +1,38 @@
+<div class="contact">
+    <h1>Contact Me</h1>
+    <form class="myForm">
+        <div class="input-group">
+            <input id="name" name="name" type="text">
+            <span class="bar"></span>
+            <label for="name">Name</label>
+        </div>
+        <div class="input-group">
+            <input id="email" type="email" name="name" required>
+            <span class="bar"></span>
+            <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+            <input id="country" type="text" name="country" required>
+            <span class="bar"></span>
+            <label for="country">Country</label>
+        </div>
+        <div>
+            <input type="submit" value="Send" />
+        </div>
+    </form>
+</div>
+
+<script>
+    $(document).ready(function() {
+
+        $(".input-group input, .input-group textarea").focusout(function() {
+            var text_val = $(this).val();
+            if (text_val === "") {
+                $(this).removeClass("has-value");
+            } else {
+                $(this).addClass("has-value");
+            }
+        });
+
+    });
+</script>
