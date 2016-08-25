@@ -77,6 +77,10 @@ nav {
     z-index: 100;
     position: relative;
 }
+nav.fixed {
+  position: fixed;
+  top: 0;
+}
 nav ul {
     float: right;
     position: relative;
