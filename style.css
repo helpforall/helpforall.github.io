@@ -6,7 +6,7 @@
 .banner {
     height: 250px;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(34, 34, 34, 0)), url("https://s32.postimg.org/81u9ug4l1/unsplash_min.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(34, 34, 34, 0)), url("https://s12.postimg.org/u1ffzrlwt/header.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
