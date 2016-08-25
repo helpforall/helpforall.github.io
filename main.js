@@ -16,6 +16,15 @@ $(document).ready(function() {
       $("nav ul").slideToggle();
       $(".tcon").toggleClass("tcon-transform");
     }
-  })
-
+  });
+  $(window).scroll(function() {
+    var navheight = $('nav').outerHeight();
+    if ($(this).scrollTop() > 249) {
+      $("nav").addClass("fixed");
+      $("body").css("margin-top", "50px");
+    } else {
+      $("nav").removeClass("fixed");
+      $("body").css("margin-top", "0px");
+    }
+  });
 });
