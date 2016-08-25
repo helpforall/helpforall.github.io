@@ -234,9 +234,7 @@ nav a:focus {
   padding: 10px;
 }
 .line-break {
-  height: 2px;
-  width: 100px;
-  background: #333;
+  height: 0px;
   display: block;
   margin: 0 auto;
   margin-bottom: 5em;
