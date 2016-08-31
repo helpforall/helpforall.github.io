@@ -1,10 +1,10 @@
 var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 
-myApp.config(function ($routeProvider) {
+myApp.config(function($routeProvider) {
 
   $routeProvider
 
-  .when('/', {
+    .when('/', {
     templateUrl: 'views/home.html',
     controller: 'mainController'
   })
@@ -14,8 +14,8 @@ myApp.config(function ($routeProvider) {
     controller: 'aboutController'
   })
 
-  .when('/photos', {
-    templateUrl: 'views/photos.html',
+  .when('/skills', {
+    templateUrl: 'views/skills.html',
     controller: 'photosController'
   })
 
